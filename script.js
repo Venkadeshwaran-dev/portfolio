@@ -424,7 +424,7 @@ const projectData = {
   1: {
     title: "AI-Enabled Aircraft Fault Prediction System",
     badge: "AI Predictive Maintenance",
-    image: "assets/project_aircraft.png",
+    image: "project_aircraft.png",
     description: "An end-to-end predictive diagnostic pipeline designed to continuously process multi-channel sensor telemetry from aircraft engines, hydraulic pumps, and avionics systems. The machine learning model forecasts micro-anomalies and component fatigue before physical breakdowns occur.",
     highlights: [
       "Significant increase in early fault detection accuracy compared to standard threshold alarms.",
@@ -436,7 +436,7 @@ const projectData = {
   2: {
     title: "AgriFusion - Deep Learning & IoT for Sustainable Farming",
     badge: "Precision Agriculture",
-    image: "assets/project_agrifusion.png",
+    image: "project_agrifusion.png",
     description: "Integrated smart agriculture ecosystem that combines computer vision Convolutional Neural Networks (CNNs) for instant crop disease classification with a mesh network of field IoT sensors measuring soil moisture, NPK levels, temperature, and humidity.",
     highlights: [
       "Achieved 94% crop disease classification accuracy across multi-leaf image datasets.",
@@ -448,7 +448,7 @@ const projectData = {
   3: {
     title: "Zoho Cliqtrix Hackathon - Commercial Automation Bot",
     badge: "SalesIQ Bot Integration",
-    image: "assets/project_zoho.png",
+    image: "project_zoho.png",
     description: "Developed during the nationwide Zoho Cliqtrix Hackathon, this commercial bot automates customer qualification, product catalog recommendations, and CRM sales lead routing natively inside Zoho Cliq and SalesIQ platforms.",
     highlights: [
       "Selected as a top Finalist solution in competitive hackathon evaluations.",
