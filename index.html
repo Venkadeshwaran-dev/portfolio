@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venkadeshwaran P | Full-Stack Developer & Data Analyst | ECE Graduate</title>
+  <meta name="description" content="Motion portfolio of Venkadeshwaran P - Electronics & Communication Engineering graduate specializing in Python, Full-Stack Web Development, and Data Analytics.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Dynamic Interactive Particle Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Sticky Glassmorphism Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-brand">
+        <div class="logo-badge">VP</div>
+        <span>VENKADESHWARAN</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#timeline" class="nav-link">Experience</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="mobile-toggle" id="mobile-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-nav-drawer" id="mobile-drawer">
+    <a href="#hero" class="nav-link">Home</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#timeline" class="nav-link">Experience</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
+
+  <!-- SECTION 1: HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left: Headshot Frame -->
+        <div class="hero-image-wrapper">
+          <div class="headshot-frame">
+            <img src="assets/headshot.jpg" alt="Venkadeshwaran P Headshot" class="headshot-img">
+          </div>
+          <div class="hero-floating-badge badge-top-left">
+            <i class="fa-solid fa-bolt" style="color: #ff9d00;"></i>
+            <span>Python Developer</span>
+          </div>
+          <div class="hero-floating-badge badge-bottom-right">
+            <i class="fa-solid fa-layer-group" style="color: #0088ff;"></i>
+            <span>Full-Stack Developer</span>
+          </div>
+        </div>
+
+        <!-- Right: Glassmorphism Info Card -->
+        <div class="hero-card glass-card">
+          <div class="hero-greeting">
+            <i class="fa-solid fa-terminal"></i> Welcome to my Motion Portfolio
+          </div>
+          <h1 class="hero-name">VENKADESHWARAN P</h1>
+          <div class="hero-subtitle">
+            <i class="fa-solid fa-code-branch"></i> Full-Stack Developer & Data Analyst | ECE Graduate
+          </div>
+          <p class="hero-tagline">
+            Building Scalable Solutions with Python, Data Analytics & Full-Stack Web Development. Bridging engineering precision with modern software technologies to solve real-world problems.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> Explore My Work
+            </a>
+            <button class="btn btn-secondary" onclick="openContactModal()">
+              <i class="fa-solid fa-envelope"></i> Let's Connect
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <a href="#skills" class="scroll-indicator">
+      <span>SCROLL DOWN</span>
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- SECTION 2: CORE SKILLS & SPECIALIZATIONS -->
+  <section class="skills-section section-padding" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Capabilities & Tech Stack</span>
+        <h2 class="section-title">Core Skills & Specializations</h2>
+        <p class="section-subtitle">Combining theoretical engineering concepts with cutting-edge software development and data analytics.</p>
+      </div>
+
+      <div class="skills-grid">
+        
+        <!-- Skill Card 1: Python Programming -->
+        <div class="skill-card glass-card" data-delay="100">
+          <div>
+            <div class="skill-icon-header">
+              <div class="skill-icon-box">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <span class="skill-tag">Core Tech</span>
+            </div>
+            <h3 class="skill-name">Python Programming</h3>
+            <p class="skill-desc">Advanced Python scripting, data structures, automation pipelines, object-oriented architecture, and numerical analysis.</p>
+          </div>
+          <div class="skill-animation-box">
+            <div class="code-typing">import pandas as pd; df.groupby('cat').mean()</div>
+          </div>
+        </div>
+
+        <!-- Skill Card 2: Database Management & SQL -->
+        <div class="skill-card glass-card" data-delay="200">
+          <div>
+            <div class="skill-icon-header">
+              <div class="skill-icon-box">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <span class="skill-tag">Database</span>
+            </div>
+            <h3 class="skill-name">Database Management & SQL</h3>
+            <p class="skill-desc">Relational database design, query optimization, data normalization, schema modeling, and SQL data aggregation pipelines.</p>
+          </div>
+          <div class="skill-animation-box">
+            <div style="color: #61afef;">SELECT id, name, COUNT(*) FROM analytics GROUP BY id;</div>
+          </div>
+        </div>
+
+        <!-- Skill Card 3: Backend Web Architecture & APIs -->
+        <div class="skill-card glass-card" data-delay="300">
+          <div>
+            <div class="skill-icon-header">
+              <div class="skill-icon-box">
+                <i class="fa-solid fa-server"></i>
+              </div>
+              <span class="skill-tag">Backend</span>
+            </div>
+            <h3 class="skill-name">Backend Architecture & APIs</h3>
+            <p class="skill-desc">RESTful web APIs, server-side business logic, automation workflows, middleware routing, and backend integrations.</p>
+          </div>
+          <div class="skill-animation-box">
+            <div style="color: #00ffaa;">app.post('/api/v1/data', (req, res) => res.json(status));</div>
+          </div>
+        </div>
+
+        <!-- Skill Card 4: Front-end Development -->
+        <div class="skill-card glass-card" data-delay="400">
+          <div>
+            <div class="skill-icon-header">
+              <div class="skill-icon-box">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <span class="skill-tag">Web Dev</span>
+            </div>
+            <h3 class="skill-name">Front-End Development</h3>
+            <p class="skill-desc">Responsive web interfaces, interactive dashboards, modern CSS animations, HTML5 Canvas graphics, and UI design.</p>
+          </div>
+          <div class="skill-animation-box">
+            <div style="color: #61afef;">&lt;div class="dashboard"&gt; &lt;Analytics/&gt; &lt;/div&gt;</div>
+          </div>
+        </div>
+
+        <!-- Skill Card 5: Data Analysis & Problem Solving -->
+        <div class="skill-card glass-card" data-delay="500">
+          <div>
+            <div class="skill-icon-header">
+              <div class="skill-icon-box">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <span class="skill-tag">Data Science</span>
+            </div>
+            <h3 class="skill-name">Data Analysis & Problem Solving</h3>
+            <p class="skill-desc">Exploratory data analysis, Pandas data cleaning, statistical modeling, chart visualizations, and quantitative evaluation.</p>
+          </div>
+          <div class="skill-animation-box">
+            <canvas id="graph-canvas" class="graph-canvas"></canvas>
+          </div>
+        </div>
+
+        <!-- Skill Card 6: Communication & Leadership -->
+        <div class="skill-card glass-card" data-delay="600">
+          <div>
+            <div class="skill-icon-header">
+              <div class="skill-icon-box">
+                <i class="fa-solid fa-users-gear"></i>
+              </div>
+              <span class="skill-tag">Soft Skills</span>
+            </div>
+            <h3 class="skill-name">Communication & Leadership</h3>
+            <p class="skill-desc">Managing academic cohorts of 60+ students as Class Representative and presenting technical papers at international conferences.</p>
+          </div>
+          <div class="skill-animation-box" style="justify-content: center; gap: 0.8rem;">
+            <i class="fa-solid fa-user-tie" style="font-size: 1.2rem; color: #ff9d00;"></i>
+            <i class="fa-solid fa-arrow-right-long" style="color: #6b3fb8;"></i>
+            <i class="fa-solid fa-users" style="font-size: 1.2rem; color: #0088ff;"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: FEATURED PROJECTS SHOWCASE -->
+  <section class="projects-section section-padding" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Featured Work</span>
+        <h2 class="section-title">Innovative Projects Showcase</h2>
+        <p class="section-subtitle">Real-world AI, Machine Learning, and IoT applications designed to solve industry challenges.</p>
+      </div>
+
+      <!-- Carousel Wrapper -->
+      <div class="carousel-container">
+        <div class="carousel-track" id="carousel-track">
+          
+          <!-- Project 1 -->
+          <div class="project-card glass-card">
+            <div class="project-media">
+              <img src="assets/project_aircraft.png" alt="Aircraft Fault Prediction System" class="project-img">
+              <div class="project-badge-overlay">AI & ML System</div>
+            </div>
+            <div class="project-info">
+              <span class="project-number">PROJECT 01</span>
+              <h3 class="project-title">AI-Enabled Aircraft Fault Prediction System</h3>
+              <p class="project-desc">Predictive maintenance solution using machine learning models to analyze sensor telemetry patterns and forecast aircraft component failures before occurrence.</p>
+              <div class="project-achievement">
+                <i class="fa-solid fa-trophy" style="color: #ff9d00;"></i>
+                <span>Significantly improved early fault detection accuracy</span>
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">Data Preprocessing</span>
+                <span class="tech-tag">Classification</span>
+                <span class="tech-tag">Sensors</span>
+              </div>
+              <div>
+                <button class="btn btn-primary" onclick="openProjectModal(1)">
+                  <i class="fa-solid fa-arrow-right"></i> View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card glass-card">
+            <div class="project-media">
+              <img src="assets/project_agrifusion.png" alt="AgriFusion Smart Farming" class="project-img">
+              <div class="project-badge-overlay">Deep Learning & IoT</div>
+            </div>
+            <div class="project-info">
+              <span class="project-number">PROJECT 02</span>
+              <h3 class="project-title">AgriFusion - Smart Farming Solution</h3>
+              <p class="project-desc">Plant disease detection system combining CNN image classification with IoT sensor data for sustainable precision agriculture and real-time monitoring.</p>
+              <div class="project-achievement">
+                <i class="fa-solid fa-chart-pie" style="color: #0088ff;"></i>
+                <span>94% classification accuracy | Real-time IoT sensor telemetry</span>
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Deep Learning</span>
+                <span class="tech-tag">CNN</span>
+                <span class="tech-tag">IoT</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Sensor Integration</span>
+                <span class="tech-tag">Computer Vision</span>
+              </div>
+              <div>
+                <button class="btn btn-primary" onclick="openProjectModal(2)">
+                  <i class="fa-solid fa-arrow-right"></i> View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card glass-card">
+            <div class="project-media">
+              <img src="assets/project_zoho.png" alt="Zoho Automation Bot" class="project-img">
+              <div class="project-badge-overlay">Hackathon Solution</div>
+            </div>
+            <div class="project-info">
+              <span class="project-number">PROJECT 03</span>
+              <h3 class="project-title">Zoho Cliqtrix Hackathon - Commercial Automation Bot</h3>
+              <p class="project-desc">Developed an intelligent commercial sales automation bot using Zoho Cliq and SalesIQ platforms during a competitive nation-wide hackathon.</p>
+              <div class="project-achievement">
+                <i class="fa-solid fa-award" style="color: #6b3fb8;"></i>
+                <span>Competitive Hackathon Finalist Project & Workflow Bot</span>
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Zoho Cliq</span>
+                <span class="tech-tag">Automation</span>
+                <span class="tech-tag">SalesIQ</span>
+                <span class="tech-tag">Bot Development</span>
+                <span class="tech-tag">API Integration</span>
+              </div>
+              <div>
+                <button class="btn btn-primary" onclick="openProjectModal(3)">
+                  <i class="fa-solid fa-arrow-right"></i> View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Carousel Navigation -->
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="prev-btn" aria-label="Previous Project">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="carousel-dots" id="carousel-dots">
+            <div class="dot active" data-slide="0"></div>
+            <div class="dot" data-slide="1"></div>
+            <div class="dot" data-slide="2"></div>
+          </div>
+          <button class="carousel-btn" id="next-btn" aria-label="Next Project">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 4: ACHIEVEMENTS & CERTIFICATIONS TIMELINE -->
+  <section class="timeline-section section-padding" id="timeline">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career Milestones</span>
+        <h2 class="section-title">Achievements & Certifications</h2>
+        <p class="section-subtitle">Chronological progression of leadership roles, technical research, competitions, and professional certifications.</p>
+      </div>
+
+      <div class="timeline-container">
+        
+        <!-- Achievement 1 (Left) -->
+        <div class="timeline-item left achieve" data-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-badge"><i class="fa-solid fa-user-shield"></i> Leadership</span>
+            <h3 class="timeline-title">Class Representative (2024-2025)</h3>
+            <div class="timeline-subtitle">Dhanalakshmi Srinivasan Engineering College</div>
+            <p class="timeline-desc">Coordinated 60+ engineering students, liaised with faculty, managed academic schedules, and organized technical events.</p>
+          </div>
+        </div>
+
+        <!-- Certification 1 (Right) -->
+        <div class="timeline-item right cert" data-delay="200">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-badge"><i class="fa-solid fa-certificate"></i> NPTEL Certification (2025)</span>
+            <h3 class="timeline-title">Introduction to Large Language Models (LLMs)</h3>
+            <div class="timeline-subtitle">NPTEL / IIT Online Certification</div>
+            <p class="timeline-desc">Mastered transformer architectures, prompt engineering fundamentals, fine-tuning mechanisms, and LLM application design.</p>
+          </div>
+        </div>
+
+        <!-- Achievement 2 (Left) -->
+        <div class="timeline-item left achieve" data-delay="300">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-badge"><i class="fa-solid fa-scroll"></i> Research Paper</span>
+            <h3 class="timeline-title">IEEE Conference Paper Presentation</h3>
+            <div class="timeline-subtitle">IEEE International Conference</div>
+            <p class="timeline-desc">Presented technical research paper to academic experts, demonstrating clear communication of complex ECE & ML concepts.</p>
+          </div>
+        </div>
+
+        <!-- Certification 2 (Right) -->
+        <div class="timeline-item right cert" data-delay="400">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-badge"><i class="fa-solid fa-cloud"></i> Cloud Certification</span>
+            <h3 class="timeline-title">AWS Academy Cloud Foundations Graduate</h3>
+            <div class="timeline-subtitle">AWS Academy</div>
+            <p class="timeline-desc">Completed cloud infrastructure training, covering AWS EC2, S3, IAM, serverless compute, and cloud security architecture.</p>
+          </div>
+        </div>
+
+        <!-- Achievement 3 (Left) -->
+        <div class="timeline-item left achieve" data-delay="500">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-badge"><i class="fa-solid fa-code"></i> Hackathon</span>
+            <h3 class="timeline-title">Zoho Cliqtrix Hackathon Developer</h3>
+            <div class="timeline-subtitle">Zoho Corporation</div>
+            <p class="timeline-desc">Designed and built commercial sales automation bots utilizing SalesIQ integration in a intense competitive environment.</p>
+          </div>
+        </div>
+
+        <!-- Certification 3 (Right) -->
+        <div class="timeline-item right cert" data-delay="600">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-badge"><i class="fa-solid fa-network-wired"></i> NPTEL Certification (2024)</span>
+            <h3 class="timeline-title">Introduction to Internet of Things (IoT)</h3>
+            <div class="timeline-subtitle">NPTEL Certification</div>
+            <p class="timeline-desc">Gained comprehensive expertise in sensor protocols, wireless sensor networks, embedded C/Python, and cloud telemetry.</p>
+          </div>
+        </div>
+
+        <!-- Certification 4 (Right) -->
+        <div class="timeline-item right cert" data-delay="700">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-badge"><i class="fa-solid fa-database"></i> Data Science Certification (2024)</span>
+            <h3 class="timeline-title">Python for Data Science</h3>
+            <div class="timeline-subtitle">NPTEL Certification</div>
+            <p class="timeline-desc">Extensive training in data manipulation (Pandas, NumPy), data visualization (Matplotlib, Seaborn), and statistical analysis.</p>
+          </div>
+        </div>
+
+        <!-- Certification 5 (Right) -->
+        <div class="timeline-item right cert" data-delay="800">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-badge"><i class="fa-solid fa-graduation-cap"></i> Infosys Certification</span>
+            <h3 class="timeline-title">Infosys Foundation Program – Employability School</h3>
+            <div class="timeline-subtitle">Infosys Springboard</div>
+            <p class="timeline-desc">Rigorous industry software development training covering full-stack web concepts, problem-solving, and corporate readiness.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: EDUCATION & ABOUT ME -->
+  <section class="about-section section-padding" id="about">
+    <div class="container">
+      <div class="about-grid">
+        
+        <!-- Left Column: Headshot Photo & Key Metrics -->
+        <div class="about-photo-card glass-card">
+          <div class="about-photo-wrapper">
+            <img src="assets/headshot.jpg" alt="Venkadeshwaran P Photo" class="about-photo">
+          </div>
+
+          <div class="about-stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">8.5</div>
+              <div class="stat-label">B.E. CGPA</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">60+</div>
+              <div class="stat-label">Students Coordinated</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Certifications</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Featured Projects</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: About Paragraph & Education Progress Bars -->
+        <div class="about-text-card glass-card">
+          <span class="section-tag">Background & Credentials</span>
+          <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">About Me & Education</h2>
+          
+          <p class="about-paragraph">
+            Electronics and Communication Engineering graduate with hands-on expertise in Python, Full-Stack Development, and Data Analytics. Proven leadership as Class Representative managing 60+ students. Experienced in presenting technical concepts at IEEE conferences. Quick learner passionate about applying technical skills to solve real-world problems through innovation and collaboration.
+          </p>
+
+          <div class="education-header">
+            <i class="fa-solid fa-graduation-cap" style="color: #ff9d00;"></i> Academic Qualifications
+          </div>
+
+          <div class="education-list">
+            
+            <!-- B.E. Degree -->
+            <div class="education-card">
+              <div class="edu-top">
+                <div class="edu-degree">B.E. Electronics & Communication Engineering</div>
+                <div class="edu-year">2022 - 2026</div>
+              </div>
+              <div class="edu-institution">Dhanalakshmi Srinivasan Engineering College (Autonomous)</div>
+              <div class="progress-container">
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="85%"></div>
+                </div>
+                <div class="progress-value">8.5 CGPA (85%)</div>
+              </div>
+            </div>
+
+            <!-- HSC -->
+            <div class="education-card">
+              <div class="edu-top">
+                <div class="edu-degree">Higher Secondary Certificate (HSC)</div>
+                <div class="edu-year">2021 - 2022</div>
+              </div>
+              <div class="edu-institution">State Board Higher Secondary Education</div>
+              <div class="progress-container">
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="80%"></div>
+                </div>
+                <div class="progress-value">80%</div>
+              </div>
+            </div>
+
+            <!-- SSLC -->
+            <div class="education-card">
+              <div class="edu-top">
+                <div class="edu-degree">Secondary School Leaving Certificate (SSLC)</div>
+                <div class="edu-year">2019 - 2020</div>
+              </div>
+              <div class="edu-institution">State Board Secondary Education</div>
+              <div class="progress-container">
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="75%"></div>
+                </div>
+                <div class="progress-value">75%</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: CONTACT & CALL-TO-ACTION -->
+  <section class="contact-section section-padding" id="contact">
+    <div class="container">
+      <div class="contact-card glass-card">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Connect & Build Something Amazing</h2>
+        <p class="section-subtitle">I'm always open to interesting projects, research collaborations, engineering opportunities, and technical discussions.</p>
+
+        <div class="contact-grid">
+          
+          <!-- Email Card -->
+          <a href="mailto:venkadeshpalanivel12@gmail.com" class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">venkadeshpalanivel12@gmail.com</div>
+          </a>
+
+          <!-- Phone Card -->
+          <a href="tel:+919360584878" class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-label">Phone</div>
+            <div class="contact-value">+91 9360584878</div>
+          </a>
+
+          <!-- LinkedIn Card -->
+          <a href="https://linkedin.com/in/venkadeshwaran-palanivel" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value">venkadeshwaran-palanivel</div>
+          </a>
+
+          <!-- GitHub Card -->
+          <a href="https://github.com/VENKADESHWARANP" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="contact-label">GitHub</div>
+            <div class="contact-value">VENKADESHWARANP</div>
+          </a>
+
+        </div>
+
+        <div class="contact-actions">
+          <button class="btn btn-primary" onclick="openContactModal()">
+            <i class="fa-solid fa-paper-plane"></i> Let's Work Together
+          </button>
+          <a href="mailto:venkadeshpalanivel12@gmail.com" class="btn btn-outline">
+            <i class="fa-solid fa-envelope-open-text"></i> Send Me An Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="nav-brand">
+        <div class="logo-badge">VP</div>
+        <span>VENKADESHWARAN P</span>
+      </div>
+      <div class="footer-copy">
+        &copy; <span id="current-year">2026</span> Venkadeshwaran P. All Rights Reserved.
+      </div>
+      <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+  </footer>
+
+  <!-- PROJECT DETAILS MODAL DIALOG -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeProjectModal()">&times;</button>
+      <div id="project-modal-content">
+        <!-- Dynamic modal content loaded via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT FORM MODAL DIALOG -->
+  <div class="modal-overlay" id="contact-modal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeContactModal()">&times;</button>
+      <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem; color: #fff;">Let's Work Together</h2>
+      <p style="color: #a0a0a0; font-size: 0.95rem; margin-bottom: 2rem;">Fill out the form below to initiate collaboration.</p>
+
+      <form id="modal-contact-form" onsubmit="handleContactSubmit(event)">
+        <div class="form-group">
+          <label class="form-label" for="contact-name">Your Name</label>
+          <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Morgan" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="contact-email">Email Address</label>
+          <input type="email" id="contact-email" class="form-input" placeholder="e.g. alex@example.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="contact-subject">Subject</label>
+          <input type="text" id="contact-subject" class="form-input" placeholder="Project Inquiry / Job Opportunity" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="contact-message">Message</label>
+          <textarea id="contact-message" class="form-textarea" rows="4" placeholder="Briefly describe your requirements..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
